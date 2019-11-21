@@ -1,58 +1,46 @@
 * {
   box-sizing: border-box;
 }
+
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto 20px;
+  width: 600px;
+}
+
 h1 {
-  position: relative;
-  top: 50px;
-  left: 100px;
-  font-size: 24px;
+  font-size: 18px;
   font-family: arial;
 }
 
-h3 {
-  font-size: 15px;
-  font-weight: 550;
-}
 body {
-  margin: 0;
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: arial;
   font-weight: 400;
-}
-div {
-  height: 90px;
-  line-height: 5px;
-  margin:0;
-
+  line-height: 22px;
 }
 
-.column {
-  float: left;
-  padding-left: 100px;
-  padding-top: 50px;
-  width: auto;
+.Eastbound {
+  list-style: none;
 }
 
-.column.left {
-  width: 10%;
-}
-.column.middle{
-  width: 200px;
-  padding-left: 40px;
-}
-.column.right {
-  width: 250px;
-  padding-left: 30px;
+.Northbound {
+  list-style: none;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.Southbound {
+  list-style: none;
 }
 
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
+.Reroute {
+  list-style: none;
+}
+
+.Out {
+  list-style: none;
+}
+
+@media screen and (min-width: 575px) {
+
 }
