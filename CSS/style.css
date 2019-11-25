@@ -7,24 +7,17 @@ body {
 }
 
 .navbar {
-  font-size: 18px;
   display: inline-block;
+  font-size: 18px;
   background-color: #F8F8F8;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  height: 88px;
+  height: 90px;
   width: 375px;
   border-bottom: 1px solid darkgray;
 }
 
 .navbar h2 {
- margin-left: 100px;
- padding-bottom: 100px;
-}
-
-.navbar h3 {
-  color: #007AFF;
-  margin-left: 20px;
-
+  text-align: center;
 }
 
 .container {
@@ -38,49 +31,16 @@ body {
   display: inline-block;
   color: rgba(0, 0, 0, 0.36);
   width: 375px;
+
 }
 
-
-.Eastbound {
+.Eastbound, .Northbound, .Southbound, .Reroute, .Out{
   border-bottom: 1px solid gray;
-  padding-left: 20px;
   margin-bottom: 10px;
   margin-top: 20px;
-  padding-bottom: 15px;
-}
-
-.Northbound {
-  border-bottom: 1px solid gray;
   padding-left: 20px;
-  margin-bottom: 10px;
-  margin-top: 20px;
   padding-bottom: 15px;
 }
-
-.Southbound {
-  border-bottom: 1px solid gray;
-  padding-left: 20px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  padding-bottom: 15px;
-}
-
-.Reroute {
-  border-bottom: 1px solid gray;
-  padding-left: 20px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  padding-bottom: 15px;
-}
-
-.Out {
-  border-bottom: 1px solid gray;
-  padding-left: 20px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  padding-bottom: 15px;
-}
-
 
 
 @media screen and (min-width: 575px) {
