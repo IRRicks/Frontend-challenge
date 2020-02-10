@@ -1,17 +1,27 @@
-* {
+*, *: before, *:after {
   box-sizing: border-box;
 }
 
 body {
+  position: relative;
   background-color: #404040;
-  font-size: 18px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-family: "SF Pro Text", Helvetica, sans-serif;
+}
+
+.container {
+  position: relative;
+  margin: 20px auto;
+  width: 375px;
+  height: 812px;
+  background: white;
+  overflow: auto;
 }
 
 .navbar {
   font-size: 18px;
   background-color: #F8F8F8;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "SF Pro Text", Helvetica, sans-serif;
   height: 95px;
   width: 375px;
   border-bottom: 1px solid #EAEAEA;
@@ -32,61 +42,83 @@ body {
   margin-left: 5px;
 }
 
-.container {
-  background-color: white;
-  width: 375px;
-  margin: auto;
-}
-.buslist h4 {
-  display: inline-block;
-  margin-left: 5px;
-  padding-top: 5px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-}
-
-.Eastbound, .Northbound, .Southbound, .Reroute, .Out {
-  width: 375px;
-  height: 45px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #EAEAEA;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  list-style: none;
-  color: rgba(0, 0, 0, 0.36);
+.direction {
+  position: relative;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .number {
-  color: black;
-  display: inline-block;
-  margin-left: 5px;
-  width: 10px;
+  font-size: 2em;
+  color: #007AFF;
+  font-weight: normal;
+  font-family: "SF Pro Text", Helvetica, sans-serif;
+  position: relative;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  bottom: 40px;
 }
 
 .stop {
-  display:inline-block;
-  margin-left: 40px;
-  width: 160px;
+  font-size: 1em;
+  color: black;
+  font-weight: normal;
+  font-family: "SF Pro Text", Helvetica, sans-serif;
+  position: relative;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  bottom: 40px;
 }
 
 .time {
-  display: inline-block;
-  width: 65px;
-  margin-left: 50px;
+  font-size: 1em;
+  color: gray;
+  font-weight: normal;
+  font-family: "SF Pro Text", Helvetica, sans-serif;
+  float: right;
+  position: relative;
+  vertical-align: middle;
+  text-align: right;
+  bottom: 60px;
+}
+
+.direction {
+  font-size: 1em;
+  color: gray;
+  font-weight: normal;
+  font-family: "SF Pro Text", Helvetica, sans-serif;
+  position: relative;
+  bottom: 40px;
+}
+
+.due {
+  font-size: 1em;
+  color: red;
+  font-weight: normal;
+  font-family: "SF Pro Text", Helvetica, sans-serif;
+  float: right;
+  position: relative;
+  text-align: right;
+  bottom: 60px;
+}
+
+ul {
+  border-bottom: 1px solid gray;
 }
 
 #fwarrow {
-  float: right;
-  width: 35px;
-  height: 40px;
-  padding-bottom: 15px;
+  position: relative;
+  text-align: right;
+  bottom: 30px;
+
 }
 
 #backarrow {
-  width: 20px;
+  width: 10px;
   height: 15px;
   padding-left: 10px;
 }
-
 
 @media screen and (min-width: 575px) {
   .container {
