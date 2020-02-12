@@ -40,12 +40,13 @@ body {
 .navbar h3 {
   color: #007AFF;
   margin-left: 5px;
+  font-size: 14px;
 }
 
 .direction {
   position: relative;
   padding-left: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .number {
@@ -56,7 +57,7 @@ body {
   position: relative;
   padding-top: 50px;
   padding-left: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   bottom: 40px;
 }
 
@@ -80,7 +81,7 @@ body {
   position: relative;
   vertical-align: middle;
   text-align: right;
-  bottom: 60px;
+  bottom: 70px;
 }
 
 .direction {
@@ -100,24 +101,23 @@ body {
   float: right;
   position: relative;
   text-align: right;
-  bottom: 60px;
+  bottom: 70px;
 }
 
-ul {
-  border-bottom: 1px solid gray;
+.list-one {
+  border-bottom: 1px solid #EBEBEB;
+  height: 100px;
 }
 
 #fwarrow {
-  position: relative;
-  text-align: right;
-  bottom: 30px;
-
+  vertical-align: middle;
 }
 
 #backarrow {
   width: 10px;
   height: 15px;
   padding-left: 10px;
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 575px) {
